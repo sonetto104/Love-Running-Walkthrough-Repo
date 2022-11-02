@@ -60,4 +60,32 @@ h1, h2 {
     height: 600px;
     width: 100%;
     background: url(../images/hero-image.webp) no-repeat center center;
+    overflow: hidden;
+}
+
+#hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+
+
+/* Animate Hero image */
+
+/* Animates Zoom Effect on Loading Page */
+
+animation-name: hero-zoom;
+animation-duration: 5s;
+animation-fill-mode: forwards;
+}
+/* Create Zoom Level for Hero Image */
+
+@keyframes hero-zoom {
+    from{
+        transform: scale(1)
+
+    }
+    to {
+        transform: scale(1.1);
+
+    }
 }
